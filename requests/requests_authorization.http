@@ -1,0 +1,37 @@
+POST  http://127.0.0.1:8000/api-token-auth/
+Content-Type: application/json
+
+{
+    "username": "bercut39",
+    "password": "VantoosXP01230"
+}  
+
+********************JWT_Token********************
+###
+
+POST  http://127.0.0.1:8000/auth/users/
+Content-Type: application/json
+
+{
+    "username": "bercut41",
+    "password": "VantoosXP01230"
+}  
+###
+POST  http://127.0.0.1:8000/auth/jwt/create/
+Content-Type: application/json
+
+{
+    "username": 1,
+    "password": "VantoosXP01230"
+}  
+###
+bercut38
+{
+  "refresh": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYzNjE4MzkyNCwianRpIjoiMDNmYTMxOTQwODczNDEzOWFhMzFhZGEwZDliMzJjYzUiLCJ1c2VyX2lkIjoxfQ.866lb7QyCK26Pi5AlpB0O_7zwpOeT2X_FkmmKiL9bNQ",
+  "access": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM2NTI5NTI0LCJqdGkiOiJkNDU0NTBkZmI5MjA0ZGUwYjZlYmRlMDlhYmNkODMyYSIsInVzZXJfaWQiOjF9.jWlHyt27j0j_t5yoOo8g2UdcD7StcpNC7QlUGug2vhc"
+}
+bercut39
+{
+  "refresh": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYzNjI4ODc0MiwianRpIjoiZjQ3OTIyMmRlZjM4NDM5MmI4NGFjMzAzNGI3NzJkMzgiLCJ1c2VyX2lkIjozfQ.SxGG124afm_xy7iYiLiLzFEp8iPtNWFkdqptFq1sPCA",
+  "access": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM2NjM0MzQyLCJqdGkiOiIxNzRiZjI5NTA4ZmE0OGE2ODllYzAyMWY3MjM1YTc3NyIsInVzZXJfaWQiOjN9.fZfdF7-JSGoDJ9pkpGQe3lJkf0aWi_w8nXxnwxc4dYg"
+}

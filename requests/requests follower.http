@@ -1,0 +1,11 @@
+GET http://127.0.0.1:8000/api/v1/follow/
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM2NTI5NTI0LCJqdGkiOiJkNDU0NTBkZmI5MjA0ZGUwYjZlYmRlMDlhYmNkODMyYSIsInVzZXJfaWQiOjF9.jWlHyt27j0j_t5yoOo8g2UdcD7StcpNC7QlUGug2vhc
+###
+POST http://127.0.0.1:8000/api/v1/follow/
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM2NTI5NTI0LCJqdGkiOiJkNDU0NTBkZmI5MjA0ZGUwYjZlYmRlMDlhYmNkODMyYSIsInVzZXJfaWQiOjF9.jWlHyt27j0j_t5yoOo8g2UdcD7StcpNC7QlUGug2vhc
+Content-Type: application/json
+
+{
+    "following": "bercut41"
+} 
+###

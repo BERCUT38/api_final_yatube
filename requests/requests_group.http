@@ -1,0 +1,43 @@
+GET http://127.0.0.1:8000/api/v1/groups/
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM2NTI5NTI0LCJqdGkiOiJkNDU0NTBkZmI5MjA0ZGUwYjZlYmRlMDlhYmNkODMyYSIsInVzZXJfaWQiOjF9.jWlHyt27j0j_t5yoOo8g2UdcD7StcpNC7QlUGug2vhc
+###
+GET http://127.0.0.1:8000/groups/2/
+Authorization: Token 72148034a4e3e9fb71ebefdde75b3e3ab7f4a235
+###
+POST  http://127.0.0.1:8000/api/v1/groups/
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM2NTI5NTI0LCJqdGkiOiJkNDU0NTBkZmI5MjA0ZGUwYjZlYmRlMDlhYmNkODMyYSIsInVzZXJfaWQiOjF9.jWlHyt27j0j_t5yoOo8g2UdcD7StcpNC7QlUGug2vhc
+Content-Type: application/json
+
+{
+    "title": "группа1",
+    "slug": "huricane2",
+    "description": "описание группы"
+}  
+###
+
+
+
+DELETE  http://127.0.0.1:8000/groups/3/
+Authorization: Token 72148034a4e3e9fb71ebefdde75b3e3ab7f4a235
+###
+PUT   http://127.0.0.1:8000/groups/2/
+Authorization: Token 72148034a4e3e9fb71ebefdde75b3e3ab7f4a235
+Content-Type: application/json
+
+{
+    "title": "Pony111",
+    "slug": "rainbow_and_other111",
+    "description": "изменяем пут"
+}    
+###
+PATCH   http://127.0.0.1:8000/groups/2/
+Authorization: Token 72148034a4e3e9fb71ebefdde75b3e3ab7f4a235
+Content-Type: application/json
+
+{
+    "title": "Pony222",
+    "slug": "rainbow_and_other222",
+    "description": "изменяем патч"
+}    
+###
+ 
