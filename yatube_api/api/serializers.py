@@ -1,18 +1,8 @@
 from rest_framework import serializers
 from rest_framework.relations import SlugRelatedField
-from rest_framework.generics import get_object_or_404
 from rest_framework.validators import UniqueTogetherValidator
 
 from posts.models import Comment, Post, Group, Follow, User
-
-
-def validate_user_not_self_following(data):
-    user = User.objects.get(username=data.get('user'))
-    following = get_object_or_404(User, username=data.get('following'))
-    if following == user:
-        raise serializers.ValidationError(
-            'Нельзя подписаться на самого себя'
-        )
 
 
 class PostSerializer(serializers.ModelSerializer):
@@ -77,5 +67,4 @@ class FollowSerializer(serializers.ModelSerializer):
                 queryset=queryset,
                 fields=['user', 'following']
             ),
-            validate_user_not_self_following
         ]
