@@ -9,19 +9,19 @@ Content-Type: application/json
 ********************JWT_Token********************
 ###
 
-POST  http://127.0.0.1:8000/auth/users/
+POST  http://127.0.0.1:8000/api/v1/users/
 Content-Type: application/json
 
 {
-    "username": "bercut41",
+    "username": "bercut200",
     "password": "VantoosXP01230"
 }  
 ###
-POST  http://127.0.0.1:8000/auth/jwt/create/
+POST  http://127.0.0.1:8000/api/v1/jwt/create
 Content-Type: application/json
 
 {
-    "username": 1,
+    "username": "bercut38",
     "password": "VantoosXP01230"
 }  
 ###
